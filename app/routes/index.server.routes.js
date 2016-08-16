@@ -10,6 +10,15 @@ module.exports = function(app) {
 
   // ACTUAL ROUTING
 
+// Domain on the different side is not able to access data from each other. Server have to
+// allow access for the domain to do it. This is to Allow different domain to access data
+  app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
+
+
   app.get('/', staticPageController.renderHome);
   app.get('/about', staticPageController.renderAbout);
   app.get('/contact', staticPageController.renderContact);
