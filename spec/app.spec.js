@@ -30,12 +30,12 @@ describe("Express Server API", function() {
           .expect(200, done);
       });
 
-      // it("returns status code 404", function(done) {
-      //   supertest(app)
-      //     .get('/profiles')
-      //     .expect('Content-Type', /json/)
-      //     .expect(404, done);
-      // });
+      it("returns status code 404", function(done) {
+        supertest(app)
+          .get('/profiles')
+          .expect('Content-Type', /json/)
+          .expect(404, done);
+      });
 
       it("returns a correct json format", function(done) {
         supertest(app)
