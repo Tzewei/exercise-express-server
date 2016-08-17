@@ -1,3 +1,10 @@
 language: node_js
 node_js:
 - node
+deploy:
+  provider: heroku
+  api_key:
+    secure: jUQdenwxyBmfL8WaLa85vn+8MrH6AyeC2uTsWGtHo6DcH+WtabuVUE+DmGhYaJ7Ao6FvKXkFVzLUHafiqYJBUcv1xj+ObCeX4EH+SORLpQDY8aCNd24VshlatjfS8vR8VHSxRt9nEZJAYVe2eQabuGrU08LguKQG8A7QFDhTqsWSew6JNowl77noRXHbU6/kweDAlB0KGRgZmUrzoTTFdT87LjWPb8SjwH4nzHQOHK0/8hKwS9vM+BQNA/2EB6cZXKX8/62hfiJ6nQaKWGp6Y56U4xZYK84XDw607pAlpEQr0CHswtNcO2pID3gs/GL1HIx+gxS8dylN9ptfLANBE0opLQCLLuln9QrNxpHigo7eyltgCzE+rqg3//d407dDXSYl4h9M5NtpMWWW1RIvj1GYtkH6lGWJj9o/06envQ3MzCU1pm5bfjOJ6m+6KRvnOh31CD8yh5z3tWYbueZn56sPyy/qsqeSNi6K61NP2/mc4RzXCJ1crb1QmnZrZ5PTpWLaa/WbxHKv8uPmSiTR7GRQXkPVEfyuFsh6csdhDNe0VXP8+GMRK+JqZSuAfn8Bb8G8+hORR3Cr4/nfMaBK7OFAsvs1zIy1CupxrqIp+ZAcGO5lCTfK9vggIK2dl4dTV+BfU9aJgPVSmUuwntouEd1kWXjAp+qN9LQSwKbL5m0=
+  app: evening-crag-35759
+  on:
+    repo: Tzewei/exercise-express-server
